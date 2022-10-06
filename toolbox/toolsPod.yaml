@@ -9,8 +9,3 @@ spec:
     - name: toolbox
       image: ezradibiase/moovatools:latest
       imagePullPolicy: Always
-      env:
-        - name: POD_NAMESPACE
-          valueFrom:
-            fieldRef:
-              fieldPath: metadata.namespace
